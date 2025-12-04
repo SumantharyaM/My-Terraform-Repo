@@ -4,7 +4,7 @@ provider "aws" {
 
 # S3 bucket for Terraform state
 resource "aws_s3_bucket" "tf_backend" {
-  bucket        = "Sumanth-terraform-backend-bucket"
+  bucket        = "sumanth-tf-backend-bucket-001"
   force_destroy = true
   tags = { Name = "terraform-backend" }
 }
